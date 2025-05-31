@@ -1,0 +1,182 @@
+.metric-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  min-width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Score-based styling */
+.score-authentic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #10B981;
+}
+
+.score-suspicious::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #EF4444;
+}
+
+.metric-title {
+  color: #ffffff;
+  font-size: 0.875rem;
+  margin: 0 0 0.75rem 0;
+  opacity: 0.9;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: color 0.3s ease;
+}
+
+/* Value colors */
+.score-authentic .metric-value {
+  color: #10B981;
+}
+
+.score-suspicious .metric-value {
+  color: #EF4444;
+}
+
+.metric-description {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Indicator dot */
+.metric-indicator {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.indicator-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+/* Animation for value changes */
+@keyframes valueChange {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.changed {
+  animation: valueChange 0.3s ease;
+}
+
+/* Analysis thresholds based on statistics */
+.analysis-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+/* Add these AI-specific styles to your existing CSS */
+.ai-metric {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ai-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.ai-icon {
+  font-size: 1.25rem;
+  color: #64B5F6;
+}
+
+.confidence-indicator {
+  margin: 1rem 0;
+}
+
+.confidence-bar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.confidence-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.very-low-risk .confidence-fill {
+  background: #10B981;
+}
+
+.low-risk .confidence-fill {
+  background: #22C55E;
+}
+
+.medium-risk .confidence-fill {
+  background: #F59E0B;
+}
+
+.high-risk .confidence-fill {
+  background: #EF4444;
+}
+
+.very-high-risk .confidence-fill {
+  background: #DC2626;
+}
+
+.confidence-label {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.warning {
+  color: #EF4444;
+}
+
+.authentic {
+  color: #10B981;
+}
+
+/* Animation for value changes */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.changed {
+  animation: pulse 0.3s ease;
+}

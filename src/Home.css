@@ -1,0 +1,255 @@
+.home-container {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 1rem 0; /* Reduced padding */
+}
+
+.title-container {
+  text-align: center;
+  margin: 1rem 0; /* Reduced margin */
+}
+
+.title-container h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.title-container h1:last-child {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ff0000; /* Theme red color */
+}
+
+.cyber-title,
+.company-name {
+  display: none;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 1rem; /* Reduced bottom margin */
+  line-height: 1.6;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.cyber-button {
+  background: #0a0a0a;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  border: 1px solid #1a1a1a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-button:hover {
+  border-color: #ff0000;
+  transform: translateY(-2px);
+}
+
+.cyber-logout {
+  position: relative;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text */
+  cursor: pointer;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 150px; /* Fixed width */
+  margin: 0 auto; /* Center button */
+}
+
+/* Remove hover effects */
+.cyber-logout:hover {
+  border-color: #1a1a1a;
+  transform: none;
+}
+
+/* Remove overlay effects */
+.cyber-logout .card-overlay {
+  display: none;
+}
+
+.cyber-card {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.cyber-card:hover {
+  border-color: #ff0000;
+  transform: translateY(-2px);
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 0, 0, 0.1),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.cyber-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ff0000;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.cyber-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.cyber-card p {
+  color: #666;
+  line-height: 1.6;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem 0 0 0; /* Reduced top padding */
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .cyber-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.125rem;
+    padding: 0 1rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem 0 1rem; /* Reduced padding */
+  }
+}
+
+/* Footer styles */
+.footer-wrapper {
+  width: 100%;
+  background: #0a0a0a;
+  border-top: 1px solid #1a1a1a;
+  margin-top: auto;
+}
+
+.cyber-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-section h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #666;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  display: block;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons svg:hover,
+.footer-section a:hover {
+  color: #ff0000;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
