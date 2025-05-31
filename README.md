@@ -1,16 +1,100 @@
-<<<<<<< HEAD
-# React + Vite
+# E-CORP Secure Authentication System 🔐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![E-CORP Banner](./src/assets/images/banner.png)
 
-Currently, two official plugins are available:
+A modern, secure authentication system featuring Zero-Knowledge Proofs (ZKP) and an engaging cyberpunk interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👥 Contributors
 
-## Expanding the ESLint configuration
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Pruthvi-123-prog">
+        <img src="https://github.com/Pruthvi-123-prog.png" width="100px;" alt="Pruthvi Suvarna K.M"/>
+        <br />
+        <sub><b>Pruthvi Suvarna K.M</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/">
+        <img src="https://github.com/ghost.png" width="100px;" alt="Mohammed Bilal Shaikh"/>
+        <br />
+        <sub><b>Mohammed Bilal Shaikh</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/">
+        <img src="https://github.com/ghost.png" width="100px;" alt="Rahul M"/>
+        <br />
+        <sub><b>Rahul M</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/">
+        <img src="https://github.com/ghost.png" width="100px;" alt="Muzammil Ahmed Khan"/>
+        <br />
+        <sub><b>Muzammil Ahmed Khan</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/">
+        <img src="https://github.com/ghost.png" width="100px;" alt="Nafees Khan"/>
+        <br />
+        <sub><b>Nafees Khan</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# E-CORP
->>>>>>> 289bc7b7cde127075b5d84c70c10021f6cb545cc
+// ...existing content...
+
+## 🛠 Installation & Setup
+
+### Frontend Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Pruthvi-123-prog/E-CORP.git
+cd E-CORP
+```
+
+2. Install frontend dependencies:
+```bash
+npm install
+```
+
+3. Start the frontend development server:
+```bash
+npm run dev
+```
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+```bash
+cd server
+```
+
+2. Install backend dependencies:
+```bash
+npm install
+```
+
+3. Start the backend server:
+```bash
+npm start
+```
+
+The backend server will run on `http://localhost:5000`
+
+// ...existing content...
+
+## 📧 Contact
+
+Pruthvi Suvarna K.M - [pruthvis2004@gmail.com](mailto:pruthvis2004@gmail.com)
+
+Project Link: [https://github.com/Pruthvi-123-prog/E-CORP](https://github.com/Pruthvi-123-prog/E-CORP)
+
+---
+
+<p align="center">Made with ❤️ by Team E-CORP</p>
