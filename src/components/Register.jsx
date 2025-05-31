@@ -152,16 +152,22 @@ const Register = () => {
               <input
                 type="password"
                 name="pin"
-                placeholder="Enter 4-digit PIN"
                 value={formData.pin}
-                onChange={(e) => setFormData({...formData, pin: e.target.value})}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  // Only allow numbers and limit to 4 digits
+                  if (/^\d{0,4}$/.test(value)) {
+                    setFormData({...formData, pin: value});
+                  }
+                }}
+                maxLength={4}
+                pattern="\d{4}"
+                placeholder="4-digit PIN"
                 required
-                disabled={loading}
-                pattern="[0-9]{4}"
-                maxLength="4"
                 className="auth-input"
-                title="Please enter a 4-digit PIN"
                 onMouseEnter={() => playHover()}
+                inputMode="numeric"
+                title="Please enter a 4-digit PIN"
               />
             </div>
 

@@ -148,11 +148,21 @@ const Login = ({ setIsAuthenticated }) => {
                 type="password"
                 name="pin"
                 value={formData.pin}
-                onChange={(e) => setFormData({...formData, pin: e.target.value})}
-                placeholder="PIN"
+                onChange={(e) => {
+                  const value = e.target.value;
+                  // Only allow numbers and limit to 4 digits
+                  if (/^\d{0,4}$/.test(value)) {
+                    setFormData({...formData, pin: value});
+                  }
+                }}
+                maxLength={4}
+                pattern="\d{4}"
+                placeholder="4-digit PIN"
                 required
                 className="auth-input"
                 onMouseEnter={() => playHover()}
+                inputMode="numeric"
+                title="Please enter a 4-digit PIN"
               />
             </div>
             <div className="button-container">
