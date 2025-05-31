@@ -1,0 +1,310 @@
+:root {
+  --color-bg-dark: #000000;
+  --color-bg: #0d1117;
+  --color-card-bg: #161b22;
+  --color-border: #30363d;
+  --color-text: #c9d1d9;
+  --color-text-secondary: #8b949e;
+  --color-primary: #238636;
+  --color-primary-hover: #2ea043;
+  --color-link: #58a6ff;
+  --color-user-msg: #1f6feb;
+  --color-bot-msg: #238636;
+}
+
+body {
+  font-family: 'Fira Mono', monospace;
+}
+
+.email-scanner-container {
+  min-height: 100vh;
+  background-color: var(--color-bg-dark);
+  padding: 32px 20px;
+  color: var(--color-text);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.back-button {
+  background-color: var(--color-card-bg);
+  color: #000000;  /* Changed to black */
+  border: 1px solid var(--color-border);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;  /* Increased weight for better visibility */
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 160px;  /* Added fixed width */
+  justify-content: center;  /* Center the text */
+}
+
+.back-button:hover {
+  background-color: var(--color-bg);
+  border-color: var(--color-link);
+  transform: translateY(-1px);
+}
+
+.scanner-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.login-title {
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.auth-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.chat-interface {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  height: auto;  /* Change from fixed height */
+  max-height: 80vh;  /* Add max height */
+  overflow: hidden;  /* Handle overflow */
+}
+
+.chat-container {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 160px);
+  width: 100%; /* Added to ensure full width */
+}
+
+.chat-messages {
+  height: 50vh;  /* Change from fixed pixels */
+  overflow-y: auto;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message {
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+.user-message {
+  background: rgba(255, 255, 255, 0.1);
+  margin-left: auto;
+  color: #ffffff;
+}
+
+.bot-message {
+  background: rgba(0, 0, 0, 0.3);
+  margin-right: auto;
+  color: #ffffff;
+}
+
+.input-area {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+textarea {
+  flex: 1;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text);
+  padding: 12px;
+  font-size: 14px;
+  resize: none;
+  min-height: 44px;
+  max-height: 200px;
+  width: 90%;  /* Increased width */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--color-link);
+}
+
+textarea.auth-input {
+  flex: 1;
+  min-height: 48px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 12px 16px;
+  resize: none;
+  width: 100%;
+}
+
+.send-button {
+  background-color: var(--color-primary);
+  color: #000000;  /* Changed to black */
+  border: none;
+  padding: 0 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;  /* Increased weight for better visibility */
+  transition: all 0.2s;
+  white-space: nowrap;
+  width: 120px;  /* Fixed width for button */
+}
+
+.send-button:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+}
+
+.send-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-button {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #ff0000;
+  border-radius: 12px;
+  padding: 12px 24px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  min-width: 120px;
+}
+
+.auth-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.loading {
+  opacity: 0.7;
+}
+
+.auth-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+.detector-content {
+  position: relative;
+  z-index: 2;
+  width: 140%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detector-box {
+  background-color: rgba(13, 17, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  margin: auto;  /* Add this to center the box */
+}
+
+/* Scrollbar styling */
+.chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .email-scanner-container {
+    padding: 16px;
+  }
+  
+  .header-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+
+  .input-area {
+    flex-direction: column;
+    max-width: 90%;  /* Wider on mobile */
+  }
+
+  .send-button,
+  .back-button,
+  .auth-button {
+    width: 100%;  /* Full width on mobile */
+  }
+
+  .detector-content {
+    width: 100%;
+    padding: 16px;
+  }
+}
