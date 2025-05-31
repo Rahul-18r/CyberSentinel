@@ -35,6 +35,15 @@ const Login = ({ setIsAuthenticated }) => {
       return;
     }
 
+    if (!formData.username || !formData.pin) {
+      toast.error('All fields are required', {
+        hideProgressBar: true,
+        closeButton: false,
+        autoClose: 2000
+      });
+      return;
+    }
+
     setLoading(true);
     try {
       const { proof } = generateProof(formData.pin);

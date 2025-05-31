@@ -28,7 +28,6 @@ const Register = () => {
     playClick();
 
     if (isDemoMode) {
-      // Set demo authentication state
       localStorage.setItem('isAuthenticated', 'true');
       navigate('/dashboard', { replace: true });
       return;
