@@ -28,10 +28,26 @@ const Login = ({ setIsAuthenticated }) => {
     playClick();
 
     if (isDemoMode) {
-      // Set demo authentication state
-      localStorage.setItem('isAuthenticated', 'true');
-      setIsAuthenticated(true);
-      navigate('/dashboard', { replace: true });
+      // Check for demo credentials
+      if (formData.username === 'admin' && formData.pin === '1234') {
+        localStorage.setItem('isAuthenticated', 'true');
+        setIsAuthenticated(true);
+        toast.success('Demo Login successful!', {
+          hideProgressBar: true,
+          closeButton: false,
+          autoClose: 200,
+          pauseOnHover: false,
+          draggable: false
+        });
+        // Immediate navigation to dashboard
+        navigate('/dashboard');
+      } else {
+        toast.error('Demo mode: Use username "admin" and PIN "1234"', {
+          hideProgressBar: true,
+          closeButton: false,
+          autoClose: 2000
+        });
+      }
       return;
     }
 
