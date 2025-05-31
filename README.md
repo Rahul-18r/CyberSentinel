@@ -1,6 +1,6 @@
 # E-CORP Secure Authentication System 🔐
 
-![E-CORP Banner](./src/assets/images/banner.png)
+![E-CORP Banner]([https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTl204jlZwAETowtOG8mbjiCnbYxsEhhcJXA&s])
 
 A modern, secure authentication system featuring Zero-Knowledge Proofs (ZKP) and an engaging cyberpunk interface.
 
