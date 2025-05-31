@@ -97,4 +97,4 @@ Project Link: [https://github.com/Pruthvi-123-prog/E-CORP](https://github.com/Pr
 
 ---
 
-<p align="center">Made with ❤️ by Team E-CORP</p>
+<p align="center">Made with ❤️ by Team FANCY-BEAR</p>
