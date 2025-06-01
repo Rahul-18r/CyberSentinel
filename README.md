@@ -1,69 +1,53 @@
-# E-CORP Secure Authentication System 🔐
+# CyberSentinel 🔐
 
-![E-CORP Banner]([https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTl204jlZwAETowtOG8mbjiCnbYxsEhhcJXA&s])
+A comprehensive cybersecurity toolkit combining **Safe Browsing**, **Zero-Knowledge Proof (ZKP) Authentication**, and **Email Spam Detection** — all wrapped in a sleek, modern cyberpunk-inspired interface.
 
-A modern, secure authentication system featuring Zero-Knowledge Proofs (ZKP) and an engaging cyberpunk interface.
+## Overview
 
-## 👥 Contributors
+CyberSentinel is designed to enhance your digital safety by integrating multiple advanced security features into one seamless system:
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/Pruthvi-123-prog">
-        <img src="https://github.com/Pruthvi-123-prog.png" width="100px;" alt="Pruthvi Suvarna K.M"/>
-        <br />
-        <sub><b>Pruthvi Suvarna K.M</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/">
-        <img src="https://github.com/ghost.png" width="100px;" alt="Mohammed Bilal Shaikh"/>
-        <br />
-        <sub><b>Mohammed Bilal Shaikh</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/">
-        <img src="https://github.com/ghost.png" width="100px;" alt="Rahul M"/>
-        <br />
-        <sub><b>Rahul M</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/">
-        <img src="https://github.com/ghost.png" width="100px;" alt="Muzammil Ahmed Khan"/>
-        <br />
-        <sub><b>Muzammil Ahmed Khan</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/">
-        <img src="https://github.com/ghost.png" width="100px;" alt="Nafees Khan"/>
-        <br />
-        <sub><b>Nafees Khan</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
+- **Safe Browsing:** Protect users from malicious websites and phishing attempts with real-time URL analysis.
+- **Zero-Knowledge Proof Authentication:** Implement privacy-preserving login methods that verify identity without revealing sensitive data.
+- **Email Spam Detection:** Identify and filter phishing and spam emails to keep inboxes secure.
 
-// ...existing content...
+This project serves as a powerful tool for both end-users and developers interested in cutting-edge cybersecurity solutions.
+
+---
+
+## Features
+
+- Real-time threat detection and blocking for unsafe websites  
+- Privacy-first authentication via Zero-Knowledge Proof protocols  
+- Advanced spam filtering to reduce phishing risks  
+- Intuitive cyberpunk-themed UI for an engaging user experience  
+- Modular architecture for easy integration and future enhancements  
+
+---
 
 ## 🛠 Installation & Setup
 
-### Frontend Setup
+### Prerequisites
 
-1. Clone the repository:
+- Node.js (v14 or higher recommended)  
+- npm (comes with Node.js)  
+
+### Clone the Repository
+
 ```bash
-git clone https://github.com/Pruthvi-123-prog/E-CORP.git
-cd E-CORP
+git clone https://github.com/Rahul-18r/CyberSentinel.git
+cd CyberSentinel
 ```
 
-2. Install frontend dependencies:
+### Frontend Setup
+
+1. Install frontend dependencies:
+
 ```bash
 npm install
 ```
 
-3. Start the frontend development server:
+2. Start the frontend development server:
+
 ```bash
 npm run dev
 ```
@@ -71,30 +55,50 @@ npm run dev
 ### Backend Setup
 
 1. Navigate to the backend directory:
+
 ```bash
 cd server
 ```
 
 2. Install backend dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the backend server:
+
 ```bash
 npm start
 ```
 
-The backend server will run on `http://localhost:5000`
-
-// ...existing content...
-
-## 📧 Contact
-
-Pruthvi Suvarna K.M - [pruthvis2004@gmail.com](mailto:pruthvis2004@gmail.com)
-
-Project Link: [https://github.com/Pruthvi-123-prog/E-CORP](https://github.com/Pruthvi-123-prog/E-CORP)
+By default, the backend server will run at `http://localhost:5000`.
 
 ---
 
-<p align="center">Made with ❤️ by Team FANCY-BEAR</p>
+## Usage
+
+- Open your browser and go to the frontend server (usually `http://localhost:3000` or as indicated by your dev server).  
+- Use the intuitive UI to test safe browsing, email spam detection, and ZKP authentication features.  
+
+---
+
+## Contributing
+
+Feel free to fork the project, create branches, and submit pull requests. For major changes, please open an issue first to discuss what you’d like to change.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+For any questions or support, please open an issue on GitHub or contact the repository owner directly.
+
+Project Link: [https://github.com/Rahul-18r/CyberSentinel](https://github.com/Rahul-18r/CyberSentinel)
+
+---
